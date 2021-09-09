@@ -1,13 +1,342 @@
-body {
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap");
+
+/* ******** Custom Css ********* */
+
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+:root {
+  --bgcolor: #f1f5fd;
+  --primary-color: #6f5de7;
+  --text-color: #828286;
+  --main-text-color: #333333;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+html {
+  font-size: 62.5%;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #333333;
+}
+
+/* ******** nav style start ********* */
+.nav-bg {
+  background-color: var(--bgcolor);
+  padding: 2rem 0;
+  z-index: 99;
+  position: relative;
+}
+.navbar-brand {
+  font-size: 2.5rem !important;
+}
+.navbar li {
+  padding: 0 2rem;
+}
+.navbar li a {
+  font-size: 1.7rem;
+  position: relative;
+}
+.navbar li a:hover {
+  color: var(--primary-color) !important;
+  text-shadow: 0 0.2rem 0.3rem rgba(183, 171, 255, 0.5);
+}
+.bnt-style {
+  width: 12rem;
+  height: 4rem;
+  color: #fff !important;
+  background-color: var(--primary-color) !important;
+  text-transform: capitalize !important;
+  border-radius: 2rem !important;
+  -webkit-border-radius: 2rem !important;
+  -moz-border-radius: 2rem !important;
+  -ms-border-radius: 2rem !important;
+  -o-border-radius: 2rem !important;
+  font-size: 1.6rem !important;
+}
+.bnt-style:first-child {
+  margin-right: 2rem;
+}
+.bnt-style:hover {
+  border: 0.1rem solid var(--primary-color) !important;
+  background-color: transparent !important;
+  color: var(--primary-color) !important;
+  box-shadow: 0 0.2rem 0.5rem rgba(183, 171, 255, 0.5) !important;
+}
+.bnt-style-border {
+  border: 0.1rem solid var(--primary-color) !important;
+  background-color: transparent !important;
+  color: var(--primary-color) !important;
+  box-shadow: 0 0.2rem 0.5rem rgba(183, 171, 255, 0.5) !important;
+}
+.bnt-style-border:hover {
+  color: #fff !important;
+  background-color: var(--primary-color) !important;
+}
+/* ******** nav style end ********* */
+
+/* ******** main section style start ********* */
+main {
+  background-color: var(--bgcolor);
+  width: 100%;
+  height: 100vh;
+}
+.main-hero-container {
+  height: 80vh;
+  display: flex;
+  /* background-color: royalblue; */
+}
+.main-hero-container h1 {
+  text-transform: capitalize;
+  font-weight: bolder;
+}
+.main-hero-para {
+  font-size: 1.37rem;
+  color: var(--text-color);
+  margin: 3rem 0 5rem 0;
+  font-weight: 300;
+  width: 84%;
+}
+.input-group {
+  position: relative !important;
+}
+.form-control-text {
+  position: absolute;
+  width: 60%;
+  height: 5rem;
+  border: none;
+  outline: none;
+  padding-left: 1.5rem !important;
+  font-size: 1.5rem;
+  color: rgb(97, 97, 97) !important;
+}
+.input-group-text {
+  position: absolute;
+  right: 41%;
+  top: 0.5rem !important;
+  color: #fff !important;
+  background-color: var(--primary-color) !important;
+  height: 4rem;
+  width: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem !important;
+  border-radius: 2rem !important;
+  -webkit-border-radius: 2rem !important;
+  -moz-border-radius: 2rem !important;
+  -ms-border-radius: 2rem !important;
+  -o-border-radius: 2rem !important;
+}
+.main-hero-container h3 {
+  font-weight: 400;
+  text-transform: capitalize;
+}
+.main-hero-images {
+  position: relative;
+}
+.main-hero-images img {
+  width: 60%;
+  height: 75%;
+  margin-top: 10rem;
+  box-shadow: 0 0.8rem 0.8rem rgba(0, 0, 0, 0.25);
+  position: absolute;
+  border-radius: 1.5rem;
+  -webkit-border-radius: 1.5rem;
+  -moz-border-radius: 1.5rem;
+  -ms-border-radius: 1.5rem;
+  -o-border-radius: 1.5rem;
+}
+.main-hero-images .main-hero-img2 {
+  position: absolute;
+  width: 50%;
+  height: 30%;
+  left: 62%;
+  top: -2%;
+}
+/* ******** main section end ********* */
+
+/* ******** work section style start ********* */
+.work-container {
+  width: 80vm;
+  padding: 5rem;
+  box-shadow: 0 0.4rem 1.2rem rgba(0, 0, 0, 0.2);
+  margin-top: -10rem;
+  background-color: #fff;
+  border-radius: 0.5rem;
+  -webkit-border-radius: 0.5rem;
+  -moz-border-radius: 0.5rem;
+  -ms-border-radius: 0.5rem;
+  -o-border-radius: 0.5rem;
+}
+.work-container .main-heading {
+  font-size: 3rem;
+  font-weight: bolder;
+  margin-bottom: 4rem;
+  word-spacing: 1rem;
+}
+.work-container-subdiv {
+  padding: 0 6rem !important;
+}
+.work-container .sub-heading {
+  font-size: 2rem;
+  font-weight: normal;
+}
+.fontawesome-style {
+  font-size: 2.3rem;
+  color: var(--primary-color);
+  width: 6rem;
+  height: 6rem;
+  background-color: var(--bgcolor);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem auto;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+/* ******** work section style end ********* */
+
+/* ******** About us style start ********* */
+
+.common-section {
+  margin: 5rem 0;
+}
+.our-services img {
+  width: 40%;
+  height: 75%;
+  margin-top: 10rem;
+  box-shadow: 0 0.8rem 0.8rem rgba(0, 0, 0, 0.25);
+  border-radius: 1.5rem;
+  -webkit-border-radius: 1.5rem;
+  -moz-border-radius: 1.5rem;
+  -ms-border-radius: 1.5rem;
+  -o-border-radius: 1.5rem;
+}
+.our-services .mini-title {
+  text-transform: uppercase;
+  font-weight: normal;
+  margin: 3rem 0;
+  text-align: left;
+  font-size: 1.3rem;
+}
+.our-services .main-heading {
+  font-weight: bolder;
+}
+.our-services-info {
+  margin-top: 4rem !important;
+}
+.our-services .our-services-number {
+  width: 3rem;
+  height: 3rem;
+  background-color: transparent;
+  border: 0.1rem solid var(--primary-color);
+  font-size: 1.5rem;
+  color: var(--primary-color);
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+.our-services-data {
+  padding-left: 2rem !important;
+}
+.our-services .our-services-data p {
+  margin: 1rem 0;
+}
+/* ******** About us style end ********* */
+
+/* ******** 2nd section is abou us style start ********* */
+.our-services-rightside {
+  margin-top: 10rem;
+}
+.our-services-rightside-content {
+  padding-left: 8rem !important;
+}
+/* ******** 2nd section is abou us style end ********* */
+
+/* ******** services style start ********* */
+
+.servicr-main-container {
+  margin-top: 5rem;
+  padding: 5rem 0;
+}
+.servicr-main-container .main-heading {
+  margin: 3rem 0;
+}
+.work-container-subdiv1 {
+  box-shadow: 0 0.1rem 0.4rem rgba(0, 0, 0, 0.16);
+  padding: 0 6rem !important;
+}
+.work-container-subdiv1:hover {
+  background-color: var(--bgcolor);
+  cursor: pointer;
+}
+.work-container-subdiv1:hover > .fontawesome-style {
+  background-color: #fff;
+}
+.work-container-subdiv1 .main-hero-para {
+  width: 100%;
+}
+.servicr-main-container .fontawesome-style {
+  text-align: left;
+  margin: 2rem 0;
+}
+@media (min-width: 1400px) {
+  .service-container .col-xxl-4 {
+    flex: 0 0 auto;
+    width: 30% !important;
+    margin: auto;
+  }
+}
+@media (min-width: 992px) {
+  .service-container .col-lg-4 {
+    flex: 0 0 auto;
+    width: 30% !important;
+    margin: 2.5rem auto;
+  }
+}
+/* ******** services style end ********* */
+
+/* ******** nav style start ********* */
+/* ******** nav style end ********* */
+
+/* ******** responsive media ********* */
+@media (min-width: 1500px) {
+  .container,
+  .container-lg,
+  .container-md,
+  .container-sm,
+  .container-xl,
+  .container-xxl {
+    max-width: 1500px !important;
+  }
+}
+@media (min-width: 1400px) {
+  .container,
+  .container-lg,
+  .container-md,
+  .container-sm,
+  .container-xl,
+  .container-xxl {
+    max-width: 1400px !important;
+  }
 }
