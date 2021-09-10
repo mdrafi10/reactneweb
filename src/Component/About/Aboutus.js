@@ -18,15 +18,13 @@ const Aboutus = () => {
               {aboutus.map((cur) => {
                 const { id, title, info } = cur;
                 return (
-                  <>
-                    <div className="row our-services-info" key={id}>
-                      <div className="col-1 our-services-number">{id}</div>
-                      <div className="col-10 our-services-data">
-                        <h2>{title}</h2>
-                        <p className="main-hero-para">{info}</p>
-                      </div>
+                  <div key={id} className="row our-services-info">
+                    <div className="col-1 our-services-number">{id}</div>
+                    <div className="col-10 our-services-data">
+                      <h2>{title}</h2>
+                      <p className="main-hero-para">{info}</p>
                     </div>
-                  </>
+                  </div>
                 );
               })}
 
@@ -51,15 +49,13 @@ const Aboutus = () => {
               {aboutus.map((cur) => {
                 const { id, title, info } = cur;
                 return (
-                  <>
-                    <div className="row our-services-info" key={id}>
-                      <div className="col-1 our-services-number">{id}</div>
-                      <div className="col-10 our-services-data">
-                        <h2>{title}</h2>
-                        <p className="main-hero-para">{info}</p>
-                      </div>
+                  <div className="row our-services-info" key={id}>
+                    <div className="col-1 our-services-number">{id}</div>
+                    <div className="col-10 our-services-data">
+                      <h2>{title}</h2>
+                      <p className="main-hero-para">{info}</p>
                     </div>
-                  </>
+                  </div>
                 );
               })}
 

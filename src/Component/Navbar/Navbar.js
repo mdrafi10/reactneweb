@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { NavLink } from "react-router-dom";
 
 const Navbar = () => {
   const [navTog, setNavTog] = useState(false);
@@ -7,9 +8,9 @@ const Navbar = () => {
       <header className="nav-bg">
         <nav className="navbar navbar-expand-lg navbar-light ">
           <div className="container">
-            <a className="navbar-brand" href="#">
+            <NavLink className="navbar-brand" to="/">
               Md Rafi
-            </a>
+            </NavLink>
             <button
               className="navbar-toggler"
               type="button"
@@ -25,24 +26,28 @@ const Navbar = () => {
             <div className={`collapse navbar-collapse ${navTog ? "show" : ""}`}>
               <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
                 <li className="nav-item">
-                  <a className="nav-link active" aria-current="page" href="#">
+                  <NavLink
+                    className="nav-link active"
+                    aria-current="page"
+                    to="/"
+                  >
                     Home
-                  </a>
+                  </NavLink>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link" href="#">
+                  <NavLink className="nav-link" to="/service">
                     Sevices
-                  </a>
+                  </NavLink>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link" href="#">
+                  <NavLink className="nav-link" to="/about">
                     About
-                  </a>
+                  </NavLink>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link" href="#">
+                  <NavLink className="nav-link" to="/contact">
                     Contact
-                  </a>
+                  </NavLink>
                 </li>
               </ul>
               <form className="d-flex">

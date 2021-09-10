@@ -13,16 +13,14 @@ const Services = () => {
             {serviceapi.map((cur) => {
               const { id, logo, title, info } = cur;
               return (
-                <>
-                  <div
-                    className="col-11 col-lg-4 col-xxl-4 work-container-subdiv1"
-                    key={id}
-                  >
-                    <i className={`fontawesome-style ${logo}`}></i>
-                    <h2 className="sub-heading">{title}</h2>
-                    <p className="main-hero-para">{info}</p>
-                  </div>
-                </>
+                <div
+                  className="col-11 col-lg-4 col-xxl-4 work-container-subdiv1"
+                  key={id}
+                >
+                  <i className={`fontawesome-style ${logo}`}></i>
+                  <h2 className="sub-heading">{title}</h2>
+                  <p className="main-hero-para">{info}</p>
+                </div>
               );
             })}
           </div>

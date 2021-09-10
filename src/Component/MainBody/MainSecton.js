@@ -6,7 +6,7 @@ const MainSecton = () => {
       <main>
         <section className="container main-hero-container">
           <div className="row">
-            <div className="col-12 col-lg-6 header-left-side d-flex justify-content-center flex-column align-items-start">
+            <div className="col-12 col-lg-6 header-left-side d-flex justify-content-center flex-column align-items-start order-lg-first order-last">
               <h1 className="display-2">
                 Online Payment Made <br /> Easy For You.
               </h1>
@@ -27,7 +27,7 @@ const MainSecton = () => {
               </div>
             </div>
             {/* main header right side */}
-            <div className="col-12 col-lg-6 heder-right-side d-flex justify-content-center  align-items-center main-hero-images">
+            <div className="col-12 col-lg-6 heder-right-side d-flex justify-content-center  align-items-center main-hero-images order-md-first order-sm-first">
               <img
                 src="./images/hero1.jpg"
                 alt="heroimg"
